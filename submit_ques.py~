@@ -1,27 +1,39 @@
 #TIMUS ONLINE JUDGE
-import mechanize
-import re
+import requests
 import os
 from bs4 import BeautifulSoup
+import shutil
+
 #print "Enter question no."
 qno=raw_input();
-myurl="http://acm.timus.ru/problem.aspx?num="+qno
 
-br=mechanize.Browser()
+url="http://acm.timus.ru/problem.aspx?space=1&num="+qno
+print url
 
-br.set_proxies({"http":"edcguest:edcguest@172.31.102.14:3128"})
+flag=0
+try:
+    data=requests.get(url)
+    flag=1
+except Exception,e:
+    print "Direct Connection Failed,trying Proxy"
+    f=open("proxy.txt","r+")
+    http_proxy=f.read(100)
+    f.close()
 
-br.set_handle_robots(False)
+    proxyDict={
+		"http":"http://"+http_proxy
+	      }
+    data=requests.get(url,proxies=proxyDict)
+    flag=1
 
-response=br.open(myurl)
-print response.code
-
-br.addheaders=[('User-agent','Firefox')]
-
-response=br.open(myurl)
+if flag==0:
+    print "Error in Connection"
+    print "hena"
 
 
-soup=BeautifulSoup(response)
+soup=BeautifulSoup(data.text)
+
+
 
 
 for tbl in soup.findAll('table','sample'):
@@ -47,4 +59,3 @@ for tbl in soup.findAll('table','sample'):
         item=str(item).replace("</pre>","")
         item=str(item).replace("<br/>","\n")
         fo.write(item)
-
