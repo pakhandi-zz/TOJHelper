@@ -1,0 +1,9 @@
+[
+	{ "keys": ["ctrl+shift+i"], "command": "build","args": {"variant": "parse_test_cases"} },
+	{ "keys": ["ctrl+b"], "command": "build"},
+	{ "keys": ["ctrl+shift+c"], "command": "build", "args": {"variant": "compil"} },
+	{ "keys": ["ctrl+shift+r"], "command": "build", "args": {"variant": "run_test"} },
+	{ "keys": ["ctrl+shift+t"], "command": "build", "args": {"variant": "run_custom_test_case"} },
+	{ "keys": ["ctrl+shift+s"], "command": "build", "args": {"variant": "submit_solution"} }
+
+]
