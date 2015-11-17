@@ -20,24 +20,22 @@
 			"children":
 			[
 				{				
-				"command": "build",
-				"args": {"variant": "run_test"},
-				"caption": "Batch test"
+					"command": "build",
+					"args": {"variant": "run_test"},
+					"caption": "Batch test"
 				},
 				{
-				"command": "build",
-				"args": {"variant": "run_custom_test_case"},
-				"caption": "Custom testcase"
+					"command": "build",
+					"args": {"variant": "run_custom_test_case"},
+					"caption": "Custom testcase"
 				}
 			]
 		},
 		{
 			"command": "build",
-			"args": {"variant":"submit_solution"},
+			"args": {"variant":"timus_submit_solution"},
 			"caption": "Submit solution"
-		}
-		
-               
+		}       
 	 ]
 	}
 ]

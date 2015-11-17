@@ -1,8 +1,9 @@
 echo "Enter question number"
+pwd
 read qno
 echo $qno > temp.txt
-#./ini < temp.txt
-gnome-terminal -e "python ini.py "
+python ini.py < temp.txt
+#gnome-terminal -e "python ini.py "
 #if [ ! -d "$qno" ]
 #then 
 #   exit

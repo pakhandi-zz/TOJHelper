@@ -37,7 +37,7 @@ for tbl in soup.findAll('table','sample'):
     shutil.copyfile("zy.sh",qno+"/zy.sh")
     shutil.copyfile("zx.sh",qno+"/zx.sh")
     shutil.copyfile("temp.txt",qno+"/qno.txt")
-    shutil.copyfile("template.cpp", qno+"/prog.cpp" )    
+    shutil.copyfile("template.cpp", qno+"/"+qno+".cpp" )    
 
     detach_dir=qno+"/"
     incounter=1
