@@ -1,3 +1,82 @@
-# TOJHelper_SublimePlugin 
-#[UNDER DEVELOPMENT]
-A Sublime Plugin to make it easy to compile, test and submit code on Timus Online Judge
+<h1>TOJHelper : V.0.5</h1>
+
+A batch-testing sublime plug-in for Timus Online Judge
+<br><br>
+This application is to assist a competitive-programmer while practicing on TOJ. This application downloads all the sample test cases for a problem and runs a user&#39;s solution program on all these test cases so that no time is wasted on manual checking of the solution and then directly submits the solution to TOJ without leaving the editor.
+
+For now the application is for C++ users only.
+<br>
+<br>
+<b>Make Sure you have read the <a href="#installation">Installation</a> and <a href="#usage">Usage</a> very very carefully.</b>
+<br>
+
+<h3>Index</h3>
+<ol>
+<li><a href="#requisites">Requisites</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#techused">Technology Used</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#contributors">Contrubutors</a></li>
+<li><a href="http://bugecode.com/post.php?pid=121" target="_blank">FAQ</a></li>
+</ol>
+
+<a name="requisites"><h3>Requisites</h3></a>
+<ul>
+<li>Linux (Tested on Ubuntu-14.04)</li>
+<li>Internet Connection (it should be working on terminal)</li>
+<li>Sublime Text-3
+	<ul>
+	<li>To check Sublime is installed correctly
+		<ol>
+		<li>Open a <b>terminal</b> window.</li>
+		<li>Run "subl".</li>
+		<li>If Sublime opens up, everything is perfect.</li>
+		</ol>
+	</li>
+	</ul>
+</li>
+<li>A default browser</li>
+<li>Working g++
+	<ul>
+	<li>To check g++ is working
+		<ol>
+		<li>Open a <b>terminal</b> window.</li>
+		<li>Run "g++".</li>
+		<li>If it identifies the command, everything is perfect.</li>
+		</ol>
+	</li>
+	</ul>
+</li>
+<li><b>NOTE : xdg-open command is used. Make suitable replacements/installations (in zx.sh and start.sh).</b></li>
+</ul>
+
+<a name="installation"><h3>Installation</h3></a>
+<ol>
+
+</ol>
+
+
+
+<a name="usage"><h3>Usage</h3></a>
+<ul>
+
+</ul>
+
+
+<a name="techused"><h3>Technology Used</h3></a>
+<ul>
+
+</ul>
+
+<a name="testing"><h3>Testing</h3></a>
+The program has been tested on Ubuntu14.04, 64-bit
+
+<a name="contributors"><h3>Contributors</h3></a>
+<ol>
+	<li><a href="https://github.com/henadaus">Hena Firdaus</a></li>
+	<li><a href="https://github.com/pakhandi">Asim Krishna Prasad</a></li>
+</ol>
+
+For Hugs and Bugs drop a mail at <b>asimkprasad@gmail.com</b>
+
