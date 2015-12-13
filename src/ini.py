@@ -25,7 +25,6 @@ response=br.open(myurl)
 #print response.read()
 
 soup=BeautifulSoup(response)
-print br.title()
 
 for tbl in soup.findAll('table','sample'):
     if (os.path.exists(qno)):
@@ -33,11 +32,7 @@ for tbl in soup.findAll('table','sample'):
     else:
         os.makedirs(qno)  
 
-    shutil.copyfile("zz.sh",qno+"/zz.sh")
-    shutil.copyfile("zy.sh",qno+"/zy.sh")
-    shutil.copyfile("zx.sh",qno+"/zx.sh")
-    shutil.copyfile("temp.txt",qno+"/qno.txt")
-    shutil.copyfile("template.cpp", qno+"/prog.cpp" )    
+    shutil.copyfile("template.cpp", qno+"/"+qno+".cpp" )    
 
     detach_dir=qno+"/"
     incounter=1

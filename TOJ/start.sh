@@ -11,5 +11,3 @@ python ini.py < temp.txt
 chmod -R 777 $qno
 subl ./$qno
 subl $qno/prog.cpp
-alias xdg-open="xdg-open 2>/dev/null"
-xdg-open http://acm.timus.ru/problem.aspx?num=$qno

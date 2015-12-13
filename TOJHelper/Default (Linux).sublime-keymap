@@ -1,7 +1,7 @@
 [
-	{ "keys": ["ctrl+shift+i"], "command": "build", "args": {"variant": "parse_test_cases"} },
-	{ "keys": ["ctrl+b"], "command": "build"},
-	{ "keys": ["ctrl+shift+b"], "command": "build", "args": {"variant": "Run"} },
-	{ "keys": ["ctrl+alt+b"], "command": "build", "args": {"variant": "run_custom_test_case"} },
-	{ "keys": ["ctrl+alt+s"], "command": "build", "args": {"variant": "timus_submit_solution"} }
+	{ "keys": ["ctrl+shift+I"], "command": "build","args": {"variant": "parse_test_cases"} },
+	{ "keys": ["ctrl+B"], "command": "build", "args": {"variant": "compile"} },
+	{ "keys": ["ctrl+shift+B"], "command": "build", "args": {"variant": "run_test"} },
+	{ "keys": ["ctrl+alt+B"], "command": "build", "args": {"variant": "run_custom_test_case"} },
+	{ "keys": ["ctrl+alt+O"], "command": "build", "args": {"variant": "submit_solution"} }
 ]

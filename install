@@ -1,0 +1,109 @@
+echo "Checking the version of Sublime"
+if [ -d ~/.config/sublime-text-3 ]
+then
+	echo "Changing permission of the commands ...."
+	chmod -R 777 src
+	if [ $? -ne 0 ]
+	then
+		echo "Aborting : Error"
+		exit
+	fi
+
+	echo "Copying TOJ to ~/.config/sublime-text-3/Packages/User/ ...."
+	cp -r TOJ ~/.config/sublime-text-3/Packages/User/
+	if [ $? -ne 0 ]
+	then
+		echo "Aborting : Error"
+		exit
+	fi
+
+	echo "Copying TOJHelper to ~/.config/sublime-text-3/Packages/User/ ...."
+	cp -r TOJHelper ~/.config/sublime-text-3/Packages/User/
+	if [ $? -ne 0 ]
+	then
+		echo "Aborting : Error"
+		exit
+	fi
+
+	echo "Changing permission of the directories ...."
+	
+	chmod -R 777 ~/.config/sublime-text-3/Packages/User/TOJ
+	if [ $? -ne 0 ]
+	then
+		echo "Aborting : Error"
+		exit
+	fi
+	
+	chmod -R 777 ~/.config/sublime-text-3/Packages/User/TOJHelper
+	if [ $? -ne 0 ]
+	then
+		echo "Aborting : Error"
+		exit
+	fi
+
+	echo "Copying commands to /usr/bin ...."
+	cp src/TOJHelper_* /usr/bin/
+	if [ $? -ne 0 ]
+	then
+		echo "Aborting : Error"
+		exit
+	fi
+
+	echo "Installation Successful"
+
+elif [ -d ~/.config/sublime-text-2 ]
+then
+	echo "Changing permission of the commands ...."
+	chmod -R 777 src
+	if [ $? -ne 0 ]
+	then
+		echo "Aborting : Error"
+		exit
+	fi
+
+	echo "Copying TOJ to ~/.config/sublime-text-2/Packages/User/ ...."
+	cp -r TOJ ~/.config/sublime-text-2/Packages/User/
+	if [ $? -ne 0 ]
+	then
+		echo "Aborting : Error"
+		exit
+	fi
+
+	echo "Copying TOJHelper to ~/.config/sublime-text-2/Packages/User/ ...."
+	cp -r TOJHelper ~/.config/sublime-text-2/Packages/User/
+	if [ $? -ne 0 ]
+	then
+		echo "Aborting : Error"
+		exit
+	fi
+
+	echo "Changing permission of the directories ...."
+	
+	chmod -R 777 ~/.config/sublime-text-2/Packages/User/TOJ
+	if [ $? -ne 0 ]
+	then
+		echo "Aborting : Error"
+		exit
+	fi
+	
+	chmod -R 777 ~/.config/sublime-text-2/Packages/User/TOJHelper
+	if [ $? -ne 0 ]
+	then
+		echo "Aborting : Error"
+		exit
+	fi
+
+	echo "Copying commands to /usr/bin ...."
+	cp src/TOJHelper_* /usr/bin/
+	if [ $? -ne 0 ]
+	then
+		echo "Aborting : Error"
+		exit
+	fi
+
+	echo "Installation Successful"
+
+else
+	echo "No Sublime Text found on System at path /.config/sublime-text-x...."
+	echo "Aborting : Error"
+fi

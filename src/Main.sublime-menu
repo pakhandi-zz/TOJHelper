@@ -1,43 +1,41 @@
 [
 	{
-	"caption": "TOJHelper",
-	"mnemonic": "n",
-	"id": "toj",
-	"children":
-	 [
-		{
-			"command": "build",
-			"args": {"variant": "parse_test_cases"},
-			"caption": "Start"
-		},
-		{
-			"command": "build",
-			"args": {"variant": "compil"},
-			"caption": "Compile"
-		},
-		{
-			"caption":"Run",
-			"children":
-			[
-				{				
+		"caption": "TOJHelper",
+		"mnemonic": "T",
+		"id": "toj",
+		"children":
+		[
+			{
 				"command": "build",
-				"args": {"variant": "run_test"},
-				"caption": "Batch test"
-				},
-				{
+				"args": {"variant": "parse_test_cases"},
+				"caption": "Start"
+			},
+			{
 				"command": "build",
-				"args": {"variant": "run_custom_test_case"},
-				"caption": "Custom testcase"
-				}
-			]
-		},
-		{
-			"command": "build",
-			"args": {"variant":"submit_solution"},
-			"caption": "Submit solution"
-		}
-		
-               
-	 ]
+				"args": {"variant": "compile"},
+				"caption": "Compile"
+			},
+			{
+				"caption":"Run",
+				"children":
+				[
+					{				
+						"command": "build",
+						"args": {"variant": "run_test"},
+						"caption": "Batch Test"
+					},
+					{
+						"command": "build",
+						"args": {"variant": "run_custom_test_case"},
+						"caption": "Custom Test"
+					}
+				]
+			},
+			{
+				"command": "build",
+				"args": {"variant":"submit_solution"},
+				"caption": "Submit solution"
+			}	   
+		]
 	}
 ]
