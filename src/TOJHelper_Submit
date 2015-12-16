@@ -8,13 +8,25 @@ import sys
 
 content = open(sys.argv[1], 'r').read()
 
+cnf = open(sys.argv[3], 'r')
+
+userid = cnf.readline();
+userid = userid.split('\n',1);
+
+#print userid[0]
+
+languageid = cnf.readline();
+languageid = languageid.split('\n',1)
+
+#print languageid[0]
+
 data = {
         "Action" : "submit",
         "SpaceID" : "1",
-         "JudgeID" : " ",	#Enter your judgeID
-         "Language" : "28",	#Enter your language number
-         "ProblemNum" : sys.argv[2],
-         "Source" : content
+        "JudgeID" : userid[0],	# your judgeID
+        "Language" : languageid[0],	# your language number
+        "ProblemNum" : sys.argv[2],
+        "Source" : content
        }
 
 encoded_data = urllib.urlencode(data)

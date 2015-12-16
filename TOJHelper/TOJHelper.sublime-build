@@ -30,7 +30,7 @@
 				"working_dir": "$file_path"
 			},
 			{
-				"cmd": [ "TOJHelper_Submit '${file}' '${file_base_name}'" ],
+				"cmd": [ "TOJHelper_Submit '${file}' '${file_base_name}' '${packages}/User/TOJ/config'" ],
 				"shell": true,
 				"name": "submit_solution",
 				"working_dir" : "$file_path"
