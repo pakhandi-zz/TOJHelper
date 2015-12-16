@@ -1,2 +1,4 @@
-userid
-language-number
+
+
+# Enter your UserId on the firt line, the one you got from timus when registering
+# Enter your Language Number in the second line, a list of languages can be found in "TOJHelper -> LanguageIds"

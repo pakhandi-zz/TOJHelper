@@ -35,7 +35,38 @@
 				"command": "build",
 				"args": {"variant":"submit_solution"},
 				"caption": "Submit solution"
-			}	   
+			},
+			{ "caption": "-"},
+			{
+				"command": "open_file",
+				"args": {"file": "${packages}/User/TOJHelper/README.md"},
+				"caption": "README"
+			},
+			{
+				"command": "open_file",
+				"args": {"file": "${packages}/User/TOJHelper/Default (Linux).sublime-keymap"},
+				"caption": "Key Bindings - Default"
+			},
+			{
+				"command": "open_file",
+				"args": {"file": "${packages}/User/TOJ/template.cpp"},
+				"caption": "Template"
+			},
+			{
+				"command": "open_file",
+				"args": {"file": "${packages}/User/TOJ/proxy"},
+				"caption": "Proxy"
+			},
+			{
+				"command": "open_file",
+				"args": {"file": "${packages}/User/TOJ/config"},
+				"caption": "UserId & LanguageId"
+			},
+			{
+				"command": "open_file",
+				"args": {"file": "${packages}/User/TOJ/LanguageIds.txt"},
+				"caption": "LanguageIds"
+			}
 		]
 	}
 ]

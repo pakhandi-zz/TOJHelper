@@ -10,4 +10,4 @@ python ini.py < temp.txt
 #fi
 chmod -R 777 $qno
 subl ./$qno
-subl $qno/prog.cpp
+subl $qno/$qno.cpp

@@ -9,4 +9,6 @@ int main()
 	return 0;
 }
 
-
+/*
+	Powered by Buggy plugin
+*/
