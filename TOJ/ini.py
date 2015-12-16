@@ -11,8 +11,15 @@ myurl="http://acm.timus.ru/problem.aspx?num="+qno
 
 br=mechanize.Browser()
 
+prx = open("proxy",'r')
+prx_set = prx.readline()
+prx_set = prx_set.split('\n',1)
+prx_set = prx_set[0]
+
 #Format:br.set_proxies({"http":"username:password@proxy:port"})
-br.set_proxies({"http":"edcguest:edcguest@172.31.100.26:3128"})
+if(len(prx_set)!=0):
+    print prx_set
+    br.set_proxies({"http":prx_set})
 
 br.set_handle_robots(False)
 
