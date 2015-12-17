@@ -1,4 +1,4 @@
-<h1>TOJHelper : V.0.5</h1>
+<h1>TOJHelper : V.0.6</h1>
 <h3>Not Stable</h3>
 A batch-testing sublime plug-in for Timus Online Judge
 <br><br>
