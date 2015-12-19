@@ -63,7 +63,7 @@ For now the application is for C++ users only.
 <li>Download the files and extract.</li>
 <li><b>sudo ./install</b> will install the plugin.</li>
 <li>Change the <i>Build System</i> (<i>Tools -> Build System</i>) to <b>TOJHelper</b>.</li>
-<li>GoTo <i>TOJHelper -> UserId & LanguageId</i> and set your JudgeId and LanguageId.</li>
+<li>GoTo <i>TOJHelper -> JudgeId & LanguageId</i> and set your JudgeId and LanguageId.</li>
 <li>If you are working behind proxy, goto <i>TOJHelper -> Proxy</i> and set the proxy.</li>
 </ol>
 
