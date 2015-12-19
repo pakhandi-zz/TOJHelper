@@ -10,5 +10,5 @@ int main()
 }
 
 /*
-	Powered by Buggy plugin
+	Powered by TOJHelper plugin
 */

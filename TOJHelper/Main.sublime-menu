@@ -60,7 +60,7 @@
 			{
 				"command": "open_file",
 				"args": {"file": "${packages}/User/TOJ/config"},
-				"caption": "UserId & LanguageId"
+				"caption": "JudgeId & LanguageId"
 			},
 			{
 				"command": "open_file",

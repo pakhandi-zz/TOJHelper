@@ -34,7 +34,7 @@ For now the application is for C++ users only.
 		<li>If Sublime opens up, everything is perfect.</li>
 		</ol>
 	</li>
-	</ul>
+	</ul>	
 </li>
 <li>A default browser</li>
 <li>Working g++
@@ -59,7 +59,12 @@ For now the application is for C++ users only.
 
 <a name="installation"><h3>Installation</h3></a>
 <ol>
-<li>Make appropriate changes to submit_timus.py</li>
+<li>Make sure you have Python and all the dependencies installed (Mentioned in <a href="#requisites">Requisites</a>).</li>
+<li>Download the files and extract.</li>
+<li><b>sudo ./install</b> will install the plugin.</li>
+<li>Change the <i>Build System</i> (<i>Tools -> Build System</i>) to <b>TOJHelper</b>.</li>
+<li>GoTo <i>TOJHelper -> UserId & LanguageId</i> and set your JudgeId and LanguageId.</li>
+<li>If you are working behind proxy, goto <i>TOJHelper -> Proxy</i> and set the proxy.</li>
 </ol>
 
 
