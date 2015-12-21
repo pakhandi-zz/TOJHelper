@@ -71,7 +71,20 @@ For now the application is for C++ users only.
 
 <a name="usage"><h3>Usage</h3></a>
 <ul>
-
+<li>After the installation, you should see a new menu in the menu bar, <b>Buggy</b>.</li>
+<li>Click on the <b>Buggy</b> menu and you&#39;ll be able to see all the options there.
+	<ul>
+	<li>If you are not able to see all the options, <b>"Tools -> Build System"</b> and select <b>CF</b>.</li>
+	</ul>
+</li>
+<li>Make sure the <b>name of the file is same as the question number</b>. Example : 1234.cpp</li>
+<li>Make sure Sublime Side-Bar is visible (<b>View -> Side Bar -> Show Side Bar</b>).</li>
+<li>To start parsing the test-cases, <b>(TOJHelper -> Start)</b>.</li>
+<li>For parsing the test-cases, provide the question number.</li>
+<li>Compile the code before running it on test-cases (<b>Ctrl+B</b> or <b>TOJHelper -> Compile</b>)</li>
+<li>To Run the code (<b>TOJHelper -> Run -> Batch Test / Custom Test</b>)</li>
+<li>If you want you can change the key-bindings too.</li>
+<li>If you are working behind proxy, goto <i>TOJHelper -> Proxy</i> and set the proxy.</li>
 </ul>
 
 
