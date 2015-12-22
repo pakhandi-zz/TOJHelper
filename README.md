@@ -1,5 +1,5 @@
 <h1>TOJHelper : V.0.6</h1>
-<h3>Not Stable</h3>
+<h3>Under Testing</h3>
 A batch-testing sublime plug-in for Timus Online Judge
 <br><br>
 This application is to assist a competitive-programmer while practicing on TOJ. This application downloads all the sample test cases for a problem and runs a user&#39;s solution program on all these test cases so that no time is wasted on manual checking of the solution and then directly submits the solution to TOJ without leaving the editor.
@@ -90,7 +90,7 @@ For now the application is for C++ users only.
 
 <a name="techused"><h3>Technology Used</h3></a>
 <ul>
-
+<li>Python modules <b>mechanize</b> and <b>BeautifulSoup</b>.</li>
 </ul>
 
 <a name="testing"><h3>Testing</h3></a>
