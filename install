@@ -1,3 +1,7 @@
+if [ "$EUID" -ne 0 ]
+  then echo "Please run with root privileges"
+  exit
+fi
 echo "Checking the version of Sublime"
 if [ -d ~/.config/sublime-text-3 ]
 then
